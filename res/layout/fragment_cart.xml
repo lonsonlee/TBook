@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shouye_bar_top"
+        android:padding="9dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:id="@+id/textView"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="编辑"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:id="@+id/btnEdit"
+            android:background="@null"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购物车空空如也呦~\n快去选购吧！"
+        android:id="@+id/tvEmptyCart"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvCart"
+        android:layout_below="@+id/relativeHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="合计："
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/textView2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="￥0.00"
+            android:layout_gravity="center"
+            android:textColor="#ff0000"
+            android:id="@+id/tvTotalPrice"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结算"
+            android:textSize="18sp"
+            android:background="@drawable/cart_btn_submit"
+            android:textColor="#ffffff"
+            android:id="@+id/btnSubmit"/>
+    </LinearLayout>
+
+</RelativeLayout>

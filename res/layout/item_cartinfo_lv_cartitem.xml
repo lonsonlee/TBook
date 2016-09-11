@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="5dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="70dp"
+        android:id="@+id/ivBookPic"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_launcher"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="70dp"
+        android:paddingLeft="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="全面开战"
+            android:id="@+id/tvBookName"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="200.00￥"
+            android:textColor="#dd0000"
+            android:id="@+id/tvPrice"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:layout_below="@+id/tvBookName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="x2"
+            android:id="@+id/tvCount"
+            android:layout_marginLeft="10dp"
+            android:gravity="top"
+            android:textColor="#999999"
+            android:layout_below="@+id/tvBookName"
+            android:layout_toRightOf="@+id/tvPrice"
+            android:layout_toEndOf="@+id/tvPrice"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:text="￥400.00"
+        android:textColor="#ff0000"
+        android:id="@+id/tvTotalPrice"/>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ivDel"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/cart_ico_del"/>
+
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivBookPic"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="80dp"
+        android:paddingLeft="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="全面开战"
+            android:id="@+id/tvBookName"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="200.00￥"
+            android:textColor="#dd0000"
+            android:id="@+id/tvPrice"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:layout_below="@+id/tvBookName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="x2"
+            android:id="@+id/tvCount"
+            android:layout_marginLeft="10dp"
+            android:gravity="top"
+            android:textColor="#999999"
+            android:layout_below="@+id/tvBookName"
+            android:layout_toRightOf="@+id/tvPrice"
+            android:layout_toEndOf="@+id/tvPrice"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cart_bg_numberpicker">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/cart_ico_m"
+            android:scaleType="center"
+            android:id="@+id/ivm"/>
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:gravity="center"
+               android:textColor="#ffffff"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/cart_ico_p"
+            android:scaleType="center"
+            android:id="@+id/ivp"/>
+    </LinearLayout>
+
+</LinearLayout>
